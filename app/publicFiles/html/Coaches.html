@@ -1,0 +1,11 @@
+<div class="block full">
+  <md-grid-list md-cols-xs="2" md-cols-sm="3" md-cols-md="4" md-cols-gt-md="5" md-row-height="1:1">
+    <md-grid-tile ng-repeat="person in coaches_people">
+      <div class="coach_card" layout="column">
+        <img src="/images/slide_a.jpg" class="coach-img"></img>
+        <div><b>{{person.name}}</b></div>
+        <div>{{person.roll}}</div>
+      </div>
+    </md-grid-tile>
+  </md-grid-list>
+</div>

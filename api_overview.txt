@@ -1,0 +1,6 @@
+/api/coaches GET
+/api/schedule/workout GET; title date id
+/api/schedule/workout POST
+/api/user/login POST 
+/api/user/settings GET
+/api/user GET

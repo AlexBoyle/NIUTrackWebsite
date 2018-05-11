@@ -1,0 +1,21 @@
+<div class="block full">
+  <div style="text-align:center;">
+    We normaly meet from 5:00pm - 7:00pm at the Chick Evans Field House(On Fridays we meet at the Rec Center)
+  </div>
+  
+  <div layout="column" class="schedule-bottom-divider">
+    <div layout="row" class="schedule-day">
+      <div flex="20" class="schedule-headder"></div>
+      <div flex="*" class="schedule-headder">Sprints</div>
+      <div flex="*" class="schedule-headder">Distance</div>
+    </div>
+  </div>
+  <div layout="column" ng-repeat="day in schedule_contnet" class="schedule-bottom-divider">
+    <div layout="row" class="schedule-day">
+      <div flex-sm="25" flex-xs="25" flex="20" class = "schedule-headder  schedule-divider">{{day.day}}</div>
+      <div flex="*" class="schedule-content schedule-divider">{{day.sprinters}}</div>
+      <div flex="*" class="schedule-content"> {{day.distance}}</div>
+    </div>
+  </div>
+
+</div>

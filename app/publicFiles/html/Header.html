@@ -1,0 +1,36 @@
+<div class="full">
+  <div class="header">
+    <div class="header-spacer"></div>
+    <div layout="row" class="button-block">
+      <div flex="*" layout="row">
+        <div flex="50" ng-click="coaches()" class="header-button">Coaches</div>
+        <div flex="50" ng-click="schedule()" class="header-button">Schedule</div>
+      </div>
+      <div flex="20" ng-click="main()">
+        <img class="logo" src="/images/NIUlogo.png"></img>
+      </div>
+      <div flex="*" layout="row">
+        <div flex="50" ng-click="about()" class="header-button">FAQ</div>
+        <div flex="50" ng-click="signup()" class="header-button">Sign Up</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div ui-view="" style="overflow-x:hidden;"></div>
+
+
+  <div class="footer">
+    <div layout="row">
+      <div flex="*">
+      </div>
+      <div flex="*">
+        <i class="fa fa-map-marker" aria-hidden="true"></i> 1425 Lincoln Hwy, DeKalb, IL 60115<p>
+        <i class="fa fa-mobile" aria-hidden="true"></i> (815) 000-0000<p>
+        <i class="fa fa-envelope" aria-hidden="true"></i> Email@email.email<p>
+      </div>
+      <div flex="*">
+      </div>
+    </div>
+  </div>
+</div>

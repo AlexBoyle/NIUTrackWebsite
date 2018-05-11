@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item" ng-class="{'active' : $index == 0}" ng-repeat="link in images">
+        <img class="d-block disp-img img-fluid" src="images/{{link}}" alt="slide">
+        <img class="d-block disp-img img-fluid blur-img" src="images/{{link}}" alt="slide-blur">
+      </div>
+    </div>
+    <a class="carousel-control-prev" onclick="$('#carousel').carousel('prev')" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" onclick="$('#carousel').carousel('next')" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="block">
+    <div>
+      <h1 style="text-align:center">Track and Field Club</h1>
+      <h2>The Track and Field Club</h2>
+      <div>
+        We are a fully functioning track and field team. We practice regularly, compete consistently and strive to bring out the best in every thrower, jumper, and runner. The only thing we ask of you is your best, whether you're an all-state runner, or simply someone picking up running as a hobby.
+
+Everyone has the potential to be a great athlete, you just need to put yourself in the right situation.
+
+We are a Co-Ed team, so both males and females are welcome to join, so come out, and see what NIU T/F/CC is all about!
+      </div>
+    </div>
+  </div>
+</div>

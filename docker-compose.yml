@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    container_name: mysql
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "NIUTrack"
+  niutrack:
+    container_name: NIUTrack
+    build: "./"
+    volumes:
+      - "./app/publicFiles:/app/publicFiles"
+    ports:
+      - "84:80"
+    environment:
+      VIRTUAL_HOST: niurunning.com,*.niurunning.com
+    depends_on:
+      - "mysql"
+
+networks:
+
+  default:
+    external:
+      name: nginx-proxy
