@@ -16,37 +16,37 @@
 		$stateProvider
 			.state("site", {
 				url: "",
-				templateUrl: 'html/Header.html',
+				templateUrl: 'html/views/Header.html',
 				controller: 'general'
 			})
 			.state("site.main", {
 				url: "/",
-				templateUrl: 'html/Main.html',
+				templateUrl: 'html/views/Main.html',
 				controller: '',
 			})
 			.state("site.signup", {
 				url: "/signup",
-				templateUrl: 'html/SignUp.html',
+				templateUrl: 'html/views/SignUp.html',
 				controller: '',
 			})
 			.state("site.schedule", {
 				url: "/schedule",
-				templateUrl: 'html/Schedule.html',
+				templateUrl: 'html/views/Schedule.html',
 				controller: '',
 			})
 			.state("site.information", {
 				url: "/information",
-				templateUrl: 'html/Information.html',
+				templateUrl: 'html/views/Information.html',
 				controller: '',
 			})
 			.state("site.about", {
 				url: "/about",
-				templateUrl: 'html/About.html',
+				templateUrl: 'html/views/About.html',
 				controller: '',
 			})
 			.state("site.coaches", {
 				url: "/coaches",
-				templateUrl: 'html/Coaches.html',
+				templateUrl: 'html/views/Coaches.html',
 				controller: '',
 			})
 		.state("site.login", {

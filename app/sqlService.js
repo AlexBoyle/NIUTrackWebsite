@@ -2,17 +2,18 @@
 	var mysql = require('mysql');
 	var sha256 = require('sha256');
 	var pool = mysql.createPool({
-		connectionLimit : 50,
+		connectionLimit : 5,
 		host: 'mysql',
 		user: 'root',
 		password: 'password',
 		database : 'NIUTrack'
 	});
 
-	var query = module.exports.query = function(query, params) {
+	var query = module.exports.query = function(query1, params) {
 		return new Promise((resolve, reject) => {
 			pool.getConnection(function (err, con) {
-				con.query(query, params, function(err, res, fields){
+				console.log(err);
+				con.query(query1, params, function(err, res, fields){
 					if(!err){
 						resolve(res);
 					}
